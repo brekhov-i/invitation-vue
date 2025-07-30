@@ -96,6 +96,10 @@ watch(isOpen, (newVal) => {
     font-size: 16px;
     line-height: 120%;
     text-align: center;
+
+    a {
+      text-decoration: underline;
+    }
   }
 }
 </style>
