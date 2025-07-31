@@ -8,8 +8,15 @@
         </svg>
       </button>
       <p class="model-window__text">
-        Что это значит? – По номеру <br> <strong><a href="tel:+79895360787">+7 (989) 536-07-87</a></strong> вы звоните в магазин цветов и говорите, <strong>что хотите заказать для Дианы и Ильи
-        на 12.09.25</strong>
+        Что это значит? – По номеру
+        <br />
+        <strong><a href="tel:+79895360787">+7 (989) 536-07-87</a></strong>
+        вы звоните в магазин цветов и говорите,
+        <strong>что хотите заказать для Дианы и Ильи на 12.09.25</strong>
+      </p>
+      <p class="model-window__text">
+        Цветы не будут доставлены в день свадьбы, так как это подписка, по которой Диана и Илья смогут заказать цветы
+        позже, себе домой.
       </p>
     </div>
   </div>
@@ -50,40 +57,39 @@ watch(isOpen, (newVal) => {
   height: 100dvh;
   position: fixed;
   left: 0;
-	top: 0;
-	bottom: 0;
-	right: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
 
-	opacity: 0;
-	visibility: hidden;
-	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 
+  &.model-window--open {
+    opacity: 1;
+    visibility: visible;
 
-	&.model-window--open {
-		opacity: 1;
-		visibility: visible;
-
-		.model-window__wrapper {
-			transform: scale(1);
-		}
-	}
+    .model-window__wrapper {
+      transform: scale(1);
+    }
+  }
 
   &__wrapper {
     position: relative;
-    width: 278px;
+    width: 330px;
     height: auto;
     display: flex;
     flex-direction: column;
     background-color: #eeeded;
-    padding: 34px 10px 10px;
+    padding: 34px 18px 20px;
     border-radius: 24px;
-		transform: scale(0.9);
-		transition: transform 0.3s ease-in-out;
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
   }
 
   &__close {
@@ -96,6 +102,10 @@ watch(isOpen, (newVal) => {
     font-size: 16px;
     line-height: 120%;
     text-align: center;
+
+    &:last-child {
+      margin-top: 12px;
+    }
 
     a {
       text-decoration: underline;

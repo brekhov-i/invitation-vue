@@ -35,7 +35,9 @@
           <div class="section-subtitle place-section__villa-name">Villa</div>
           <div class="place-section__villa-address">Ростовская область, х. Большой Лог, ул. Центральная д. 42</div>
           <a href="https://yandex.ru/maps/-/CHTTjCkg" class="place-section__villa-link">Посмотреть на карте</a>
-          <div class="place-section__villa-image"></div>
+          <div class="place-section__villa-image">
+            <img src="/images/image1.png" />
+          </div>
         </div>
         <div class="place-section__image">
           <img src="/images/VillaImage.png" />
@@ -220,7 +222,15 @@ onUnmounted(() => {
 
     padding: 12px 0;
 
-    &-name {
+    &-image {
+      width: auto;
+      height: 120px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     &-address {
