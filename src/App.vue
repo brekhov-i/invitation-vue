@@ -1,12 +1,14 @@
 <template>
   <template v-if="isValidAccess">
-    <MainSection />
-    <PlaceSection />
-    <PlanSection />
-    <DresscodeSection />
-    <MomentsSection />
-    <ContactsSection />
-    <FormSection />
+    <main>
+      <MainSection />
+      <PlaceSection />
+      <PlanSection />
+      <DresscodeSection />
+      <MomentsSection />
+      <ContactsSection />
+      <FormSection />
+    </main>
   </template>
   <div v-else class="empty-page">
     <div class="empty-content">
@@ -17,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import {ref, onMounted} from 'vue'
+import { ref, onMounted } from 'vue'
 import MainSection from './widgets/MainSection.vue'
 import PlaceSection from './widgets/PlaceSection.vue'
 import PlanSection from './widgets/PlanSection.vue'
@@ -25,14 +27,14 @@ import DresscodeSection from './widgets/DresscodeSection.vue'
 import MomentsSection from './widgets/MomentsSection.vue'
 import ContactsSection from './widgets/ContactsSection.vue'
 import FormSection from './widgets/FormSection.vue'
-import {ACCESS_CONFIG, verifyPassword} from './shared/config/access'
+import { ACCESS_CONFIG, verifyPassword } from './shared/config/access'
 
 const isValidAccess = ref(false)
 
 onMounted(async () => {
   // Получаем пароль из URL (без символа #)
   const inputPassword = window.location.hash.slice(1)
-
+  
   if (inputPassword) {
     // Проверяем пароль с помощью bcrypt
     const isValid = await verifyPassword(inputPassword, ACCESS_CONFIG.SECRET_HASH)
@@ -46,6 +48,7 @@ onMounted(async () => {
 
 <style lang="scss" scoped>
 main {
+  width: 100%;
   background-color: var(--primary-color);
 }
 
@@ -62,13 +65,13 @@ main {
 .empty-content {
   text-align: center;
   padding: 2rem;
-
+  
   h1 {
     color: #333;
     margin-bottom: 1rem;
     font-size: 2rem;
   }
-
+  
   p {
     color: #666;
     font-size: 1.1rem;
