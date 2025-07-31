@@ -132,7 +132,7 @@ const modelWindow = ref<InstanceType<typeof ModelWindow> | null>(null)
 @keyframes blink {
   0% {
     transform: scale(1);
-    opacity: 0.1;
+    opacity: 0.3;
   }
   50% {
     transform: scale(1.3);
@@ -140,7 +140,7 @@ const modelWindow = ref<InstanceType<typeof ModelWindow> | null>(null)
   }
   100% {
     transform: scale(1);
-    opacity: 0.1;
+    opacity: 0.3;
   }
 }
 </style>

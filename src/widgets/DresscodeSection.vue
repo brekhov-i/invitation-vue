@@ -85,7 +85,7 @@
 		margin-bottom: 38px;
 
     &-arrow {
-      width: 63px;
+      width: 16vw;
     }
   }
 
@@ -96,6 +96,10 @@
 		justify-content: flex-start;
 		align-items: flex-start;
 		overflow-x: scroll ;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
 		&-wrapper {
 			min-width: 678px;
