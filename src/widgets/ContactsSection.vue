@@ -40,6 +40,7 @@
     font-size: 16px;
     line-height: 120%;
     color: #000;
+    margin-bottom: 35px;
   }
 
   &__qr {
