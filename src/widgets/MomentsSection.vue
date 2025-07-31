@@ -74,7 +74,18 @@ const modelWindow = ref<InstanceType<typeof ModelWindow> | null>(null)
     margin-bottom: 26px;
 
 		span {
-			text-decoration: underline;
+			position: relative;
+
+			&:after {
+				width: 100%;
+				height: 1px;
+				content: '';
+
+				position: absolute;
+				bottom: 0px;
+				left: 0;
+				background-color: #ffffff;
+			}
 		}
   }
 
