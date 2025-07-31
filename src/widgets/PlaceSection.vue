@@ -33,7 +33,7 @@
       <div class="place-section__grid">
         <div class="place-section__villa">
           <div class="section-subtitle place-section__villa-name">Villa</div>
-          <div class="place-section__villa-address">Ростовская область, х. Большой Лог, ул. Центральная д. 42</div>
+          <div class="place-section__villa-address">Ростовская область, х.&nbsp;Большой Лог, ул. Центральная д. 42</div>
           <a href="https://yandex.ru/maps/-/CHTTjCkg" class="place-section__villa-link">Посмотреть на карте</a>
           <div class="place-section__villa-image">
             <img src="/images/image1.png" />
@@ -202,7 +202,8 @@ onUnmounted(() => {
     height: auto;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 1fr;
 		gap: 16px;
   }
 
@@ -223,8 +224,9 @@ onUnmounted(() => {
     padding: 12px 0;
 
     &-image {
-      width: auto;
-      height: 120px;
+      width: 100%;
+      height: auto;
+      filter: grayscale(100%);
 
       img {
         width: 100%;
@@ -233,11 +235,14 @@ onUnmounted(() => {
       }
     }
 
+    &-name {
+      font-size: 24px;
+    }
+
     &-address {
-      max-width: 124px;
       text-align: center;
 
-      font-size: 12px;
+      font-size: 16px;
       line-height: 1;
     }
 
@@ -250,9 +255,10 @@ onUnmounted(() => {
 	&__image {
 		width: 100%;
 		height: 100%;
-		border-radius: 12px;
+		border-radius: 8px;
 		overflow: hidden;
 		border: 1px solid;
+    aspect-ratio: 1/1;
 
     img {
       width: 100%;
