@@ -11,7 +11,7 @@ export async function generateHashFromPassword(password: string): Promise<string
 export function generateHashInConsole(password: string) {
   console.log('Генерация bcrypt хеша для пароля:', password)
   
-  generateHashForPassword(password).then(hash => {
+  generateHashForPassword(password).then(() => {
     console.log('Хеш пароля сгенерирован и выведен в консоль')
   }).catch(error => {
     console.error('Ошибка при генерации хеша:', error)
