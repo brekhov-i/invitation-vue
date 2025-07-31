@@ -240,10 +240,12 @@ onUnmounted(() => {
     }
 
     &-address {
+      max-width: 90%;
       text-align: center;
 
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1;
+      margin: 0 auto;
     }
 
     &-link {
