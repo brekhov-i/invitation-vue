@@ -33,7 +33,7 @@
       <div class="place-section__grid">
         <div class="place-section__villa">
           <div class="section-subtitle place-section__villa-name">Villa</div>
-          <div class="place-section__villa-address">Ростовская область, х.&nbsp;Большой Лог, ул. Центральная д. 42</div>
+          <div class="place-section__villa-address">Ростовская&nbsp;область, х.&nbsp;Большой&nbsp;Лог, ул. Центральная д. 42</div>
           <a href="https://yandex.ru/maps/-/CHTTjCkg" class="place-section__villa-link">Посмотреть на карте</a>
           <div class="place-section__villa-image">
             <img src="/images/image1.png" />

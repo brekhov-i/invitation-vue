@@ -91,20 +91,7 @@ const scrollToPlaceSection = () => {
   &__arrow {
     align-self: center;
     margin-top: 30px;
-    animation: arrowBounce 1.5s ease-in-out infinite;
     will-change: transform;
-  }
-}
-
-@keyframes arrowBounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(55px);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 </style>
