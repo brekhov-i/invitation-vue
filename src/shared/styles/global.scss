@@ -128,22 +128,9 @@ html {
 *,
 *::before,
 *::after {
-  animation-duration: 0.01ms !important;
-  animation-iteration-count: 1 !important;
-  transition-duration: 0.01ms !important;
   scroll-behavior: auto !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: unset !important;
-    animation-iteration-count: unset !important;
-    transition-duration: unset !important;
-    scroll-behavior: unset !important;
-  }
-}
 
 #app {
   max-width: 440px;
