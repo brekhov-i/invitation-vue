@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isValidAccess">
+  <template v-if="isValidAccess">
     <main>
       <MainSection />
       <PlaceSection />
@@ -9,7 +9,7 @@
       <ContactsSection />
       <FormSection />
     </main>
-  </div>
+  </template>
   <div v-else class="empty-page">
     <div class="empty-content">
       <h1>{{ ACCESS_CONFIG.MESSAGES.ACCESS_DENIED }}</h1>
