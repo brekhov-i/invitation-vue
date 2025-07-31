@@ -148,6 +148,10 @@ html {
 #app {
   max-width: 440px;
   margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .section-title {
