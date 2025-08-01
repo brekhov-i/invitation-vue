@@ -5,7 +5,7 @@
       Сканируйте QR-код, чтобы добавить снимки в наш общий альбом – и просто познакомиться поближе до свадьбы
     </div>
     <div class="contacts-section__qr">
-      <a class="" href="https://t.me/+a00j3IYJHEZlNjJi" target="_blank">
+      <a class="" href="https://t.me/+HQ8Li5vyjf44N2My" target="_blank">
         <img src="/images/tg.png" alt="qr" />
       </a>
       <span>Отсканируй или нажми на qr-код</span>

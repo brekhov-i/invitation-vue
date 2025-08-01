@@ -1,17 +1,19 @@
 <template>
-  <main>
-    <MainSection />
-    <PlaceSection />
-    <PlanSection />
-    <DresscodeSection />
-    <MomentsSection />
-    <ContactsSection />
-    <FormSection />
-  </main>
+  <template v-if="isValidAccess">
+    <main>
+      <MainSection />
+      <PlaceSection />
+      <PlanSection />
+      <DresscodeSection />
+      <MomentsSection />
+      <ContactsSection />
+      <FormSection />
+    </main>
+  </template>
 </template>
 
 <script setup lang="ts">
-import {ref, onMounted} from 'vue'
+import { ref, onMounted } from 'vue'
 import MainSection from './widgets/MainSection.vue'
 import PlaceSection from './widgets/PlaceSection.vue'
 import PlanSection from './widgets/PlanSection.vue'
@@ -19,7 +21,7 @@ import DresscodeSection from './widgets/DresscodeSection.vue'
 import MomentsSection from './widgets/MomentsSection.vue'
 import ContactsSection from './widgets/ContactsSection.vue'
 import FormSection from './widgets/FormSection.vue'
-import {ACCESS_CONFIG, verifyPassword} from './shared/config/access'
+import { ACCESS_CONFIG, verifyPassword } from './shared/config/access'
 
 const isValidAccess = ref(false)
 
