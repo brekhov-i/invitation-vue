@@ -3,7 +3,7 @@
       <div class="dresscode-section__wrapper">
         <h2 class="dresscode-section__title section-title">Дресс-код</h2>
         <p class="dresscode-section__text">
-          Мы будет видеть вас в любом наряде, но нам будет еще приятнее, если вы поддержите общую гамму нашего торжества
+          Мы будем рады видеть вас в любом наряде, но нам будет еще приятнее, если вы поддержите общую гамму нашего торжества
         </p>
         <div class="dresscode-section__colors">
           <svg width="255" height="58" viewBox="0 0 255 58" fill="none" xmlns="http://www.w3.org/2000/svg">
