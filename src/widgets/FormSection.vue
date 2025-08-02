@@ -75,6 +75,8 @@ const sendForm = async () => {
 
 	try {
 		const success = await telegramService.sendFormData(formData.value);
+
+    console.log('Logging form:',  {name: formData.value.name, result: success})
 		
 		if (success) {
 			// Очищаем форму после успешной отправки
